@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SwiftGeoToolsTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>BAB82F6A1BF020E100EEC006</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAB82F7A1BF0213E00EEC006</key>
 		<dict>
 			<key>primary</key>
 			<true/>

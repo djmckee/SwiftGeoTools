@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BAB82F6F1BF020E200EEC006 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB82F6E1BF020E200EEC006 /* main.swift */; };
+		BAB82F761BF0212400EEC006 /* SwiftGeoTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB82F751BF0212400EEC006 /* SwiftGeoTools.swift */; };
+		BAB82F7E1BF0213E00EEC006 /* SwiftGeoToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB82F7D1BF0213E00EEC006 /* SwiftGeoToolsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,21 @@
 /* Begin PBXFileReference section */
 		BAB82F6B1BF020E100EEC006 /* SwiftGeoTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGeoTools; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB82F6E1BF020E200EEC006 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BAB82F751BF0212400EEC006 /* SwiftGeoTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGeoTools.swift; sourceTree = "<group>"; };
+		BAB82F7B1BF0213E00EEC006 /* SwiftGeoToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGeoToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB82F7D1BF0213E00EEC006 /* SwiftGeoToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGeoToolsTests.swift; sourceTree = "<group>"; };
+		BAB82F7F1BF0213E00EEC006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BAB82F681BF020E100EEC006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB82F781BF0213E00EEC006 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				BAB82F6D1BF020E200EEC006 /* SwiftGeoTools */,
+				BAB82F7C1BF0213E00EEC006 /* SwiftGeoToolsTests */,
 				BAB82F6C1BF020E200EEC006 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				BAB82F6B1BF020E100EEC006 /* SwiftGeoTools */,
+				BAB82F7B1BF0213E00EEC006 /* SwiftGeoToolsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +73,18 @@
 			isa = PBXGroup;
 			children = (
 				BAB82F6E1BF020E200EEC006 /* main.swift */,
+				BAB82F751BF0212400EEC006 /* SwiftGeoTools.swift */,
 			);
 			path = SwiftGeoTools;
+			sourceTree = "<group>";
+		};
+		BAB82F7C1BF0213E00EEC006 /* SwiftGeoToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAB82F7D1BF0213E00EEC006 /* SwiftGeoToolsTests.swift */,
+				BAB82F7F1BF0213E00EEC006 /* Info.plist */,
+			);
+			path = SwiftGeoToolsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +107,23 @@
 			productReference = BAB82F6B1BF020E100EEC006 /* SwiftGeoTools */;
 			productType = "com.apple.product-type.tool";
 		};
+		BAB82F7A1BF0213E00EEC006 /* SwiftGeoToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB82F801BF0213E00EEC006 /* Build configuration list for PBXNativeTarget "SwiftGeoToolsTests" */;
+			buildPhases = (
+				BAB82F771BF0213E00EEC006 /* Sources */,
+				BAB82F781BF0213E00EEC006 /* Frameworks */,
+				BAB82F791BF0213E00EEC006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGeoToolsTests;
+			productName = SwiftGeoToolsTests;
+			productReference = BAB82F7B1BF0213E00EEC006 /* SwiftGeoToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +135,9 @@
 				ORGANIZATIONNAME = djmckee;
 				TargetAttributes = {
 					BAB82F6A1BF020E100EEC006 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					BAB82F7A1BF0213E00EEC006 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
@@ -110,9 +155,20 @@
 			projectRoot = "";
 			targets = (
 				BAB82F6A1BF020E100EEC006 /* SwiftGeoTools */,
+				BAB82F7A1BF0213E00EEC006 /* SwiftGeoToolsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAB82F791BF0213E00EEC006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAB82F671BF020E100EEC006 /* Sources */ = {
@@ -120,6 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB82F6F1BF020E200EEC006 /* main.swift in Sources */,
+				BAB82F761BF0212400EEC006 /* SwiftGeoTools.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB82F771BF0213E00EEC006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB82F7E1BF0213E00EEC006 /* SwiftGeoToolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +285,28 @@
 			};
 			name = Release;
 		};
+		BAB82F811BF0213E00EEC006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftGeoToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.djmckee.SwiftGeoToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAB82F821BF0213E00EEC006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftGeoToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.djmckee.SwiftGeoToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +324,14 @@
 			buildConfigurations = (
 				BAB82F731BF020E200EEC006 /* Debug */,
 				BAB82F741BF020E200EEC006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAB82F801BF0213E00EEC006 /* Build configuration list for PBXNativeTarget "SwiftGeoToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB82F811BF0213E00EEC006 /* Debug */,
+				BAB82F821BF0213E00EEC006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
